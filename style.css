@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+}
+
+.gg-arrow-right-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 20px;
+    cursor: pointer;
+    color: red;
+}
+.gg-arrow-right-o::after,
+.gg-arrow-right-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 4px;
+}
+.gg-arrow-right-o::after {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 6px;
+}
+.gg-arrow-right-o::before {
+    width: 10px;
+    height: 2px;
+    bottom: 8px;
+    background: currentColor
+}
+
+.expand {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    transition: left 0.3s ease;
+}
+
+.barra-lateral {
+    width: 25px;
+    height: 100vh;
+    background-color: #252525;
+    padding: 0 10px;
+    transition: width 0.3s ease;
+}
+
+.gg-arrow-left-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 22px;
+    cursor: pointer;
+    color: red;
+}
+.gg-arrow-left-o::after,
+.gg-arrow-left-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 4px
+}
+.gg-arrow-left-o::after {
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    bottom: 6px
+}
+.gg-arrow-left-o::before {
+    width: 10px;
+    height: 2px;
+    bottom: 8px;
+    background: currentColor
+}
+
+.gg-profile,
+.gg-profile::after,
+.gg-profile::before {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 100px
+}
+.gg-profile {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    position: relative;
+    color: red;
+}
+.gg-profile::after,
+.gg-profile::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 8px;
+    height: 8px
+}
+.gg-profile::after {
+    border-radius: 200px;
+    top: 11px;
+    left: 0px;
+    width: 18px;
+    height: 18px
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.perf {
+    display: flex;
+    margin-top: 15px;
+}
+
+.perfi {
+    margin-left: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.perfi:hover {
+    text-decoration: underline;
+}
+
+.gg-info {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 40px;
+    color: red;
+}
+.gg-info::after,
+.gg-info::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 3px;
+    background: currentColor;
+    left: 7px
+}
+.gg-info::after {
+    bottom: 2px;
+    height: 8px
+}
+.gg-info::before {
+    height: 2px;
+    top: 3px
+}
+
+.info {
+    display: flex;
+    margin-top: 15px;
+}
+
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px
+}
+.gg-instagram::after,
+.gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-instagram::after {
+    border: 2px solid;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+}
+.gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+}
+
+.insta {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 2px;
+}
+
+.gg-git-branch {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 2px;
+    height: 14px;
+    background: currentColor
+}
+.gg-git-branch::after,
+.gg-git-branch::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-git-branch::before {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-bottom-right-radius: 4px;
+    bottom: 0;
+    width: 8px;
+    height: 6px;
+    left: 0
+}
+.gg-git-branch::after {
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    box-shadow:
+        0 12px 0 0,
+        6px 6px 0 0;
+    border-radius: 100%;
+    left: -1px;
+    top: -1px
+}
+
+.git {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+img {
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.name {
+    display: block;
+    position: absolute;
+    background-color: red;
+    color: #252525;
+    border-radius: 15px;
+    width: 350px;
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.data {
+    display: block;
+    position: absolute;
+    top: 45%;
+    background-color: red;
+    color: #252525;
+    border-radius: 15px;
+    width: 600px;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.data div {
+    padding: 5px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+    perspective: 2; /* Remove this if you don't want the 3D effect */
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #252525;
+    color: red;
+}
+
+.text {
+    display: block;
+    position: absolute;
+    top: 52%;
+    color: red;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 18px;
+    padding: 5px;
+}
+
+  /* Style the back side */
+.flip-card-back {
+    background-color: #252525;
+    color: red;
+    transform: rotateY(180deg);
+}
