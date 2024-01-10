@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: red;
+    color: #ff0000;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto Mono', monospace;
     display: flex;
